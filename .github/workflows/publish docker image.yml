@@ -1,12 +1,10 @@
 name: publish docker image
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  release:
+    types: [created]
 env:
-  IMAGE_NAME: testapp:latest
+  IMAGE_NAME: testapp
 
 jobs:
   call_workflow_build_and_test:
