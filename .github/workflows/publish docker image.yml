@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  IMAGE_NAME: testapp
+  IMAGE_NAME: testapp:latest
 
 jobs:
   call_workflow_build_and_test:
